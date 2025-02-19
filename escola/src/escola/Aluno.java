@@ -17,7 +17,27 @@ public class Aluno {
             this.media =  media;
         }
     }
-    
+   
+    public void setNome(String vNome){
+        if(!vNome.isEmpty()){
+            nome = vNome;
+        }
+    }
+
+    public void setRa(String vRa){
+        if(!vRa.isEmpty()){
+            ra = vRa;
+        }
+    }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public String getRa(){
+        return ra;
+    }
+
     public boolean aprovado(){
         return this.media >= 6.0;
     }
